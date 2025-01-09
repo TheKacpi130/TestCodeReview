@@ -43,46 +43,46 @@ Aby uruchomić aplikację, musisz mieć zainstalowany Node.js oraz NPM.
 5. **Aby uruchomić testy jednostkowe, użyj poniższego polecenia**:
    npm test
    
-## Dodatkowe informacje
+## Szczegółowe informacje:
 
-Funkcje
-generateRandomPeople(count)
+### `generateRandomPeople(count)`
 Generuje losową liczbę osób. Każda osoba ma:
+- `name` - losowe imię z predefiniowanej listy,
+- `age` - losowy wiek (od 20 do 70 lat),
+- `height` - losowy wzrost (od 1.5m do 2.0m),
+- `isActive` - losowy status aktywności (prawda/fałsz).
 
-name - losowe imię z predefiniowanej listy.
-age - losowy wiek (od 20 do 70 lat).
-height - losowy wzrost (od 1.5m do 2.0m).
-isActive - losowy status aktywności (prawda/fałsz).
-savePeopleToCSV(people, filePath)
+### `savePeopleToCSV(people, filePath)`
 Zapisuje dane o osobach do pliku CSV. Każda osoba jest zapisywana w jednej linii w pliku.
 
-savePeopleToDB(people, dbPath)
-Zapisuje dane o osobach do bazy danych SQLite. Jeśli tabela person nie istnieje, zostaje ona utworzona.
+### `savePeopleToDB(people, dbPath)`
+Zapisuje dane o osobach do bazy danych SQLite. Jeśli tabela `person` nie istnieje, zostaje ona utworzona.
 
-updatePersonInDB(id, fieldName, newValue, dbPath)
-Aktualizuje dane osoby o podanym id w bazie danych. Można zmienić dowolne pole (np. imię, wiek, status aktywności).
+### `updatePersonInDB(id, fieldName, newValue, dbPath)`
+Aktualizuje dane osoby o podanym `id` w bazie danych. Można zmienić dowolne pole (np. imię, wiek, status aktywności).
 
-Person (Klasa)
+### `Person` (Klasa)
 Reprezentuje obiekt osoby, zawierający pola:
+- `name` - imię osoby,
+- `age` - wiek osoby,
+- `height` - wzrost osoby,
+- `isActive` - status aktywności osoby.
 
-name - imię osoby,
-age - wiek osoby,
-height - wzrost osoby,
-isActive - status aktywności osoby.
-Klasa posiada metodę toString(), która zwraca tekstową reprezentację osoby w formacie CSV.
+Klasa posiada metodę `toString()`, która zwraca tekstową reprezentację osoby w formacie CSV.
 
 ## Testowanie
-Testy zostały zaimplementowane za pomocą frameworków Mocha oraz Chai.
 
-Testy obejmują:
-Sprawdzanie poprawności zapisu do pliku CSV:
+Testy zostały zaimplementowane za pomocą frameworków **Mocha** oraz **Chai**.
 
-Czy plik nie jest pusty.
-Czy plik zawiera odpowiednią liczbę linii.
-Sprawdzenie, czy każda linia odpowiada danym osoby.
-Sprawdzanie poprawności typów danych w pliku CSV:
+### Testy obejmują:
+1. **Sprawdzanie poprawności zapisu do pliku CSV**:
+    - Czy plik nie jest pusty,
+    - Czy plik zawiera odpowiednią liczbę linii,
+    - Sprawdzenie, czy każda linia odpowiada danym osoby.
 
-Czy dane w pliku mają oczekiwane typy (np. string, number, boolean).
-Sprawdzanie aktualizacji danych w bazie danych:
+2. **Sprawdzanie poprawności typów danych w pliku CSV**:
+    - Czy dane w pliku mają oczekiwane typy (np. string, number, boolean).
 
-Czy po aktualizacji pola w bazie, dane są poprawnie zmienione.
+3. **Sprawdzanie aktualizacji danych w bazie danych**:
+    - Czy po aktualizacji pola w bazie, dane są poprawnie zmienione.
+
