@@ -36,9 +36,9 @@ Aby uruchomić aplikację, musisz mieć zainstalowany Node.js oraz NPM.
    - Otwórz terminal w katalogu projektu i uruchom polecenie:
      npm install
      
-3. **Aby uruchomić aplikację, użyj poniższego polecenia:**:
-     node run.js
+3. **Aby uruchomić aplikację, użyj poniższego polecenia**:
+   node run.js
    
 5. **Aby uruchomić testy jednostkowe, użyj poniższego polecenia**:
-    npm test
+   npm test
 
