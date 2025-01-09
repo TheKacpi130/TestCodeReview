@@ -1,7 +1,7 @@
 import fs from "fs";
 import { Person, savePeopleToCSV, savePeopleToDB } from "./app.js";
 
-// Funkcja generująca losowych ludzi
+// Funkcja generująca losowych ludzi.
 function generateRandomPeople(count) {
   // Definicja dostępnych imion i nazwisk
   const names = ["Anna", "Jan", "Maria", "Katarzyna", "Paweł"];

@@ -51,7 +51,7 @@ function updatePersonInDB(id, fieldName, newValue, dbPath = "people.db") {
     db.close();
   });
 }
-// Funkcja generująca losowe osoby
+// Funkcja generująca losowe osoby.
 function generateRandomPeople(count) {
   const names = ["Alice", "Bob", "Charlie", "Diana"];
   return Array.from({ length: count }, () => {

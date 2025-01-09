@@ -71,7 +71,7 @@ describe("Aplikacja zapisująca dane", () => {
     });
   });
 
-  // Test, który sprawdza aktualizację danych w bazie danych
+  // Test, który sprawdza aktualizację danych w bazie danych.
   it("aktualizuje dane w bazie i sprawdza zmiany", async () => {
     const people = generateRandomPeople(2);
     await savePeopleToDB(people, dbPath);
