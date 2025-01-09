@@ -8,7 +8,7 @@
     "test": "mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kacper Łukaszewski Nr albumu: 154948",
   "license": "ISC",
   "dependencies": {
     "chai": "^5.1.2",
