@@ -31,7 +31,7 @@ Aby uruchomić aplikację, musisz mieć zainstalowany Node.js oraz NPM.
 
 1. **Skopiuj projekt**:
    - Sklonuj lub pobierz plik na swoje urządzenie.
-   - 
+    
 2. **Zainstaluj zależności**:
    - Otwórz terminal w katalogu projektu i uruchom polecenie:
      npm install
